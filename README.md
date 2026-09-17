@@ -1,1 +1,108 @@
-# 3
+```c
+#include<stdio.h>
+int main()
+{
+	int i=5;
+    while(i)
+	{
+		printf("%d\n",i);
+		i=i-1;
+	}
+	return 0;
+}
+
+```
+
+```c
+#include<stdio.h>
+int main()
+{
+    do
+    {
+        printf("%d\n",i);
+        i++;
+        
+    }while(i==5);
+    return 0;
+}
+```
+
+```c
+#include<stdio.h>
+int main()
+{	int num,i;
+	printf("请输入一个数字");
+ 	scanf("%d",&num);
+ 	
+ 	do
+    {
+        num=num/10;
+        i++;
+    }while(num>0)
+printf("输入的数字有%d位",i);
+return 0;
+}
+```
+
+```c
+#include<stdio.h>
+int main()
+{
+	int i;
+    for(i=5;i>0;i--)//等价于i；while(i>0);i--
+    {
+        printf("%d\n",i);
+    }
+    return 0;
+}
+```
+
+```c
+#include<stdio.h>
+int main()
+{
+	int i;
+    for(i=5;i>0;i--)
+    {
+        printf("%d\n",i);
+    	if(i==2)
+   	    break;//break语句跳转到循环结束之后
+    }
+	return 0;
+}
+```
+
+```c
+#include<stdio.h>
+int main()
+{
+	int num,i;
+    printf("请输入一个整数:");
+    scanf("%d",&num);
+    for(i=2;i<num;i++)
+    {
+        if(  (num%i)==0  )
+            break;
+    }
+  if(i<num)    
+      printf("这个数不是素数");
+    else
+        printf("这个数是素数");
+    return 0;
+}
+```
+
+```c
+#include<stdio.h>
+int main()
+{
+	goto b;
+    a:
+    printf("这是 a");
+    b:
+    printf("这是 b");
+    c:
+    printf("这是 c");
+    return 0;
+}
+```
